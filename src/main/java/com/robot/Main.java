@@ -22,8 +22,8 @@ public class Main {
 	}
 
 	public static void printResult(ArrayList<String> result) {
-		for (String res : result) {
-			System.out.println("Output: " + res);
-		}
+		result.stream().forEach(r -> {
+			System.out.println("Output: " + r);
+		});
 	}
 }
